@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="movies.js" defer></script>
+    <script src="index.js" defer></script>
+    <script src="https://kit.fontawesome.com/76cf48f973.js" crossorigin="anonymous"></script>
+    <title>Movietastic</title>
+</head>
+<body>
+    
+        <nav>
+            <div class="nav-bar">
+                <div class="nav-container">
+                    <figure>
+                        <img src="./assets/logo-white.png" alt="" class="logo">
+                    </figure>
+                    <ul class="nav__link--list">
+                        <li class="nav__link">
+                            <a href="#" class="
+                            white
+                            nav__link--anchor
+                            link__hover-effect
+                            link__hover--effect-white"
+                            >Home</a>
+                        </li>
+                        <li class="nav__link">
+                            <a href="#" class="
+                            white
+                            nav__link--anchor
+                            link__hover-effect
+                            link__hover--effect-white"
+                            >Find your movie</a> 
+                        </li>
+                        <li class="nav__link">
+                            <a href="" class="
+                            nav__link--anchor
+                            nav__link--anchor-primary
+                            nav__link--anchor-red"
+                            >Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header-container">
+                    <h1 class="header-title">Browse any movie</h1>
+                    <div class="input-wrapper input-secondary">
+                        <input class="input-search movies-page" type="text" placeholder="Search for your movie" onchange="onSearchChange(event)">
+                        <i id="secondary-search" class="fa fa-search" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="overlay"></div>
+            </div>
+        </nav>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="movies-header">
+                        <h2>Search Results:</h2>
+                        <select name="" id="filter" onchange="filterMovies(event)">
+                            <option value = "FEATURED">Featured</option>
+                            <option value="NEW_TO_OLD">Newest</option>
+                            <option value="OLD_TO_NEW">Oldest</option>
+                            <option value="RATING">Rating</option>
+                        </select>
+                    </div>
+                    <div class="movies">
+                        <div class="movie">
+                            <figure class="movie--image-wrapper">
+                                <img class="movie-img" src="" alt="">
+                            </figure>
+                            <div class="movie-title">
+                                
+                            </div>
+                            <div class="movie-year">
+
+                            </div>
+                            <div class="movie-rating">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+</body>
+</html>
